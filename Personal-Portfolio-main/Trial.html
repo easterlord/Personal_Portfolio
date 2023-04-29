@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Not available</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background-color: #F5F5F5;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			margin: 0;
+			padding: 0;
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		h1 {
+			font-size: 5rem;
+			color: #FF4500;
+			margin: 0;
+			padding: 0.5rem;
+			text-align: center;
+			text-shadow: 2px 2px #FFC0CB;
+			animation: blinker 0.5s linear infinite;
+		}
+
+		@keyframes blinker {
+			50% {
+				opacity: 0;
+			}
+		}
+
+		.message {
+			font-size: 3rem;
+			color: #696969;
+			text-align: center;
+			margin: 3rem;
+			padding: 2rem;
+			border: 2px solid #D3D3D3;
+			box-shadow: 2px 2px #A9A9A9;
+			border-radius: 10px;
+			background-color: #FFFFFF;
+			transition: all 0.2s ease-in-out;
+			opacity: 0.8;
+			position: relative;
+			z-index: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			min-width: 50%;
+			max-width: 90%;
+		}
+
+		.message:hover {
+			box-shadow: 4px 4px #A9A9A9;
+			opacity: 1;
+			transform: scale(1.01);
+		}
+
+		.button {
+			display: block;
+			margin: 2rem auto 0 auto;
+			text-align: center;
+			padding: 1rem 2rem;
+			background-color: #FF4500;
+			color: #FFFFFF;
+			font-size: 2rem;
+			font-weight: bold;
+			border: none;
+			border-radius: 10px;
+			box-shadow: 2px 2px #FFA07A;
+			text-shadow: 1px 1px #FFA07A;
+			transition: all 0.2s ease-in-out;
+			position: relative;
+			z-index: 2;
+			cursor: pointer;
+		}
+
+		.button:hover {
+			background-color: #FFFFFF;
+			color: #FF4500;
+			box-shadow: 4px 4px #FFA07A, -4px -4px #FFA07A;
+			text-shadow: none;
+			transform: translateY(-2px);
+		}
+
+		/* Mobile Styles */
+		@media only screen and (max-width: 600px) {
+			h1 {
+				font-size: 3rem;
+			}
+			.message {
+				font-size: 2rem;
+			}
+			.button {
+				font-size: 1.5rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Not available</h1>
+	<div class="message">
+		<p>We're sorry, but we are currently unavailable.</p>
+		<p>Please check back later.</p>
+	</div>
+	<button class="button" onclick="window.location.href='index.html';">Go to Homepage</button>
+</body>
+</html>
